@@ -1,0 +1,19 @@
+{
+  "name": "library_managment-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gcc index.c -o index && \"/Users/erice/Documents/c-c++/library_managment-system/\"index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rukundoeric/library_managment-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rukundoeric/library_managment-system/issues"
+  },
+  "homepage": "https://github.com/rukundoeric/library_managment-system#readme"
+}
