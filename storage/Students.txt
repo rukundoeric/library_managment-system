@@ -1,4 +1,2 @@
-1	eric	Prestein	IT 
 2	Mucyo	Steve	IT 
 4	Elvis	Kwizera	IT 
-5	Yves	Byiringiro	IT 

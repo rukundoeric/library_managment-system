@@ -26,7 +26,7 @@ int main() {
     int choice_st;
     
     home: 
-      // clearAll();
+      clearAll();
       header("Home");
       printf("1: Students\n");
       printf("2: Books\n");
@@ -38,7 +38,7 @@ int main() {
         case 1: {
           student:
             clearAll();
-            header("Students");
+            header("Students 🧑‍🎓");
             printf("1: List all students\n");
             printf("2: Student details\n");
             printf("3: Create new student\n");
@@ -50,7 +50,7 @@ int main() {
             switch(choice_st){
               case 1: {
                 clearAll();
-                header("All students");
+                header("All students 📉");
                 getAllStudents();
                 if(displayAllStudents() != 1) {
                   return 0;
@@ -60,7 +60,7 @@ int main() {
               }
               case 2: {
                 clearAll();
-                header("Student details");
+                header("Student details ℹ️");
                 if(studentDetails() != 1) {
                   return 0;
                 }
@@ -69,14 +69,14 @@ int main() {
               }
               case 3: {
                 clearAll();
-                header("New student");
+                header("New student 🆕");
                 recordStudent();
                 goto student;
                 break;
               }
               case 4: {
                 clearAll();
-                header("Delete student");
+                header("Delete student ❗");
                 getAllStudents();
                 if(deleteStudent() != 1) {
                   return 0;
@@ -124,7 +124,7 @@ void clearAll() {
 }
 void header(char headerName[10]) {
   printf("======================================\n");
-  printf("LIBRARY MANAGEMENT SYSTEM\n");
+  printf("🌟 LIBRARY MANAGEMENT SYSTEM 🌟\n");
   printf("======================================\n");
   printf("> %s\n", headerName);
   printf("======================================\n");
@@ -145,7 +145,6 @@ void setStudentProperty(char title[50], int *intValue, char strValue[20], int da
     if(dataType == 1) {
       printf("%s \n", title);
       scanf("%d", intValue);
-      printf("NEW ID IS %d ", newSt.id);
       if(isExits(type, newSt.id) == 1) {
         printf("\nRecord with ID: %d Already exist! ⚠️. Please, use a different Id).\n\n", newSt.id);
         invalid = 1;
@@ -256,12 +255,8 @@ int deleteStudent() {
      // we found the student, then we must delete him/her
       for(int i = foundPos; i < numberOfStudents; i++) {
         allStudents[i] = allStudents[i + 1];
-        // if(i==numberOfStudents - 1){
-        //   allStudents[i] = NULL;
-        // } else {
-           
-        // }
       }
+      printf("Record deleted successfully ✅\n", sId);
       numberOfStudents--;
       p = fopen("storage/Students.txt", "w");
       for(int i = 0; i < numberOfStudents; i++) {
