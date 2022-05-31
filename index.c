@@ -268,7 +268,7 @@ void header(char headerName[10]) {
 }
 int addNewRecord(char recordType[10]) {
   int choice;
-  printf("Would you like to add a new %s?  if 'Yes', enter 1 or any other number for No.\n", recordType);
+  printf("\nWould you like to add a new %s?  if 'Yes', enter 1 or any other number for No.\n", recordType);
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
@@ -512,7 +512,7 @@ int studentDetails(){
    }
 
     int choice;
-    printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+    printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
     scanf("%d", &choice);
     if(choice == 1) {
       return 1;
@@ -544,7 +544,7 @@ int bookDetails(){
    }
 
     int choice;
-    printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+    printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
     scanf("%d", &choice);
     if(choice == 1) {
       return 1;
@@ -659,7 +659,7 @@ int deleteStudent() {
    }
   
   int choice;
-  printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+  printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
@@ -698,7 +698,7 @@ int deleteBook() {
    }
   
   int choice;
-  printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+  printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
@@ -711,7 +711,7 @@ int deleteRental() {
   int rId;
   int found = 0;
   int foundPos;
-  printf("Enter Rental's ID \n");
+  printf("\n\nEnter Rental's ID \n");
   scanf("%d", &rId);
   for(int i = 0; i < numberOfRentals; i++) {
     if(allRentals[i].id == rId){
@@ -736,7 +736,7 @@ int deleteRental() {
    }
   
   int choice;
-  printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+  printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
@@ -803,7 +803,7 @@ int displayAllStudents() {
     i++;
   }
   int choice;
-  printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+  printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
@@ -820,7 +820,7 @@ int displayAllBooks() {
     i++;
   }
   int choice;
-  printf("Would you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
+  printf("\nWould you like to Go back or Exit, enter 1 to Go Back or any other number to Exit.\n");
   scanf("%d", &choice);
   if(choice == 1) {
     return 1;
