@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gcc index.c -o index && \"/Users/erice/Documents/c-c++/library_managment-system/\"index"
+    "start": "gcc index.c -o index && ./index"
   },
   "repository": {
     "type": "git",

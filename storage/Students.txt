@@ -1,2 +1,3 @@
-2	Mucyo	Steve	IT 
-4	Elvis	Kwizera	IT 
+1	eric	prestein	it 
+2	yves	byiringiri	it 
+3	fiston	mugisha	it 
