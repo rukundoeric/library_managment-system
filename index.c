@@ -555,7 +555,7 @@ int bookDetails(){
 int rentalDetails(){
    int rId;
    int found = 0;
-   printf("Enter rental's id to see the Details \n");
+   printf("\n\nEnter rental's id to see the Details \n");
    scanf("%d", &rId);
    p=fopen("storage/Rentals.txt", "r");
    while(!feof(p)) {
@@ -711,7 +711,7 @@ int deleteRental() {
   int rId;
   int found = 0;
   int foundPos;
-  printf("\n\nEnter Rental's ID \n");
+  printf("\nEnter Rental's ID \n");
   scanf("%d", &rId);
   for(int i = 0; i < numberOfRentals; i++) {
     if(allRentals[i].id == rId){
