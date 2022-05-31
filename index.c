@@ -829,7 +829,7 @@ int displayAllBooks() {
   }
 }
 int displayAllRentals() {
-  printf("Id\t\SId\t\Book Id\tDate\n");
+  printf("Id\t\SId\t\BId\tDate\n");
   printf("======================================\n");
   int i = 0;
   while(i < numberOfRentals) {
